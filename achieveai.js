@@ -30,7 +30,7 @@ const mc = [];
 const textField = document.querySelector("#text-answer");
 if (!textField) {
   const mcRows = Array.from(
-    document.querySelector(".card-body").children,
+    document.querySelector(".ach-card-body").children,
   ).filter((i) => i.nodeName === "DIV");
   const mcOptions = mcRows.flatMap((i) => [...i.children]);
   const mcInput = mcOptions
